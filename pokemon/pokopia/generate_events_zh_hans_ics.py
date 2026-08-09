@@ -62,7 +62,7 @@ def fetch_image_urls(wikitext):
         "formatversion": 2
     }
     headers = {'User-Agent': USER_AGENT}
-    resp = requests.get("https://wiki.52poke.com/api.php", params=params, headers=headers, timeout=30)
+    resp = requests.get(API_BASE, params=params, headers=headers, timeout=30)
     resp.raise_for_status()
     urls = {}
     for page in resp.json().get("query", {}).get("pages", []):
