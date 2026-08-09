@@ -263,6 +263,7 @@ def main():
     cal = Calendar()
     cal.add('prodid', '-//io.github.bexonpak.icalendar-collection//Pokopia Events//zh-Hans')
     cal.add('version', '2.0')
+    cal.add('x-wr-calname', 'Pokopia 活动日历')
 
     for ev in events:
         event = Event()
