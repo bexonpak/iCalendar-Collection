@@ -1,6 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//io.github.bexonpak.icalendar-collection//Pokopia Events//zh-Hans
+X-WR-CALNAME:Pokopia 活动日历
 BEGIN:VEVENT
 SUMMARY:帮毽子草收集棉絮
 DTSTART;TZID=Asia/Hong_Kong:20260310T050000
