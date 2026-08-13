@@ -1,4 +1,4 @@
-name: Generate Pokopia Events zh_Hans Calendar
+name: Generate Pokopia Events zh_Hant Calendar
 
 on:
   workflow_dispatch:
@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests icalendar pytz zhconv
       - name: Generate ICS
-        run: python pokemon/pokopia/generate_events_zh_hans_ics.py
+        run: python pokemon/pokopia/generate_events_zh_hant_ics.py
       - name: Commit and push
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
