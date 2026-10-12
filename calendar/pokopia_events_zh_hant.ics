@@ -3,6 +3,26 @@ VERSION:2.0
 PRODID:-//io.github.bexonpak.icalendar-collection//Pokopia Events//zh-Hant
 X-WR-CALNAME:Pokopia 活動日曆
 BEGIN:VEVENT
+SUMMARY:寶可夢Pokopia萬聖節活動攻略
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261102
+DESCRIPTION:簡介：寶可夢Pokopia萬聖節活動攻略：活動於2026
+ 年10月17日至11月1日舉行。了解南瓜精出現地點、重建寶
+ 可夢中心與索羅亞仿效招式的準備要求，學習變成物品
+ 驚嚇寶可夢、收集南瓜糖果、兌換限定家具以及吸引南
+ 瓜怪人的流程。查看當地時間的開始與結束節點、活動
+ 無法觸發時的檢查方法和結束後寶可夢是否留下。\n\n活
+ 動時間：2026-10-17 ～ 2026-11-01
+X-ALT-DESC;FMTTYPE=text/html:<p><b>簡介</b><br>寶可夢Pokopia萬聖節
+ 活動攻略：活動於2026年10月17日至11月1日舉行。了解南瓜
+ 精出現地點、重建寶可夢中心與索羅亞仿效招式的準備
+ 要求，學習變成物品驚嚇寶可夢、收集南瓜糖果、兌換
+ 限定家具以及吸引南瓜怪人的流程。查看當地時間的開
+ 始與結束節點、活動無法觸發時的檢查方法和結束後寶
+ 可夢是否留下。</p><p><b>活動時間</b><br>2026-10-17 ～ 2026-11-
+ 01</p>
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:妙蛙種子跳大繩大賽攻略
 DTSTART;VALUE=DATE:20260920
 DTEND;VALUE=DATE:20260929
