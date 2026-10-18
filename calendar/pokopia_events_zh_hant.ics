@@ -3,24 +3,31 @@ VERSION:2.0
 PRODID:-//io.github.bexonpak.icalendar-collection//Pokopia Events//zh-Hant
 X-WR-CALNAME:Pokopia 活動日曆
 BEGIN:VEVENT
-SUMMARY:寶可夢Pokopia萬聖節活動攻略
+SUMMARY:寶可夢Pokopia萬聖節攻略
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261102
-DESCRIPTION:簡介：寶可夢Pokopia萬聖節活動攻略：活動於2026
- 年10月17日至11月1日舉行。了解南瓜精出現地點、重建寶
- 可夢中心與索羅亞仿效招式的準備要求，學習變成物品
- 驚嚇寶可夢、收集南瓜棒棒糖、兌換限定家具以及吸引
- 南瓜怪人的流程。查看當地時間的開始與結束節點、活
- 動無法觸發時的檢查方法和結束後寶可夢是否留下。\n\n
- 活動時間：2026-10-17 ～ 2026-11-01
-X-ALT-DESC;FMTTYPE=text/html:<p><b>簡介</b><br>寶可夢Pokopia萬聖節
- 活動攻略：活動於2026年10月17日至11月1日舉行。了解南瓜
- 精出現地點、重建寶可夢中心與索羅亞仿效招式的準備
- 要求，學習變成物品驚嚇寶可夢、收集南瓜棒棒糖、兌
- 換限定家具以及吸引南瓜怪人的流程。查看當地時間的
- 開始與結束節點、活動無法觸發時的檢查方法和結束後
- 寶可夢是否留下。</p><p><b>活動時間</b><br>2026-10-17 ～ 2026-
- 11-01</p>
+DESCRIPTION:簡介：查看Pokopia萬聖節活動實作攻略：依步驟
+ 使用模仿驚嚇寶可夢、收集南瓜棒棒糖，查詢九件家具
+ 的兌換數量，以及南瓜精和南瓜怪人兩種棲息地的材料
+ 組合。了解兩件燈具的疊放要求、11或12個棒棒糖的搭建
+ 預算、活動開啟條件、連線限制和失敗排查，並透過實
+ 物圖片辨認名稱尚待核實的家具，安排兌換順序。\n\n活
+ 動時間：2026-10-17 ～ 2026-11-01\n\nEerie statue：3\n\nCofagrigus lo
+ cker：3\n\nCandy bucket：2\n\nTrevenant streetlight：2\n\nPumpkin lante
+ rn：2\n\nPumpkin lantern tower：2\n\nGhost smoke projector：3\n\nHuge t
+ able：1\n\nFun balloons：2
+X-ALT-DESC;FMTTYPE=text/html:<p><b>簡介</b><br>查看Pokopia萬聖節活
+ 動實作攻略：依步驟使用模仿驚嚇寶可夢、收集南瓜棒
+ 棒糖，查詢九件家具的兌換數量，以及南瓜精和南瓜怪
+ 人兩種棲息地的材料組合。了解兩件燈具的疊放要求、11
+ 或12個棒棒糖的搭建預算、活動開啟條件、連線限制和失
+ 敗排查，並透過實物圖片辨認名稱尚待核實的家具，安
+ 排兌換順序。</p><p><b>活動時間</b><br>2026-10-17 ～ 2026-11-01<
+ /p><p><b>Eerie statue</b><br>3</p><p><b>Cofagrigus locker</b><br>3</p><p><
+ b>Candy bucket</b><br>2</p><p><b>Trevenant streetlight</b><br>2</p><p><b>P
+ umpkin lantern</b><br>2</p><p><b>Pumpkin lantern tower</b><br>2</p><p><b>G
+ host smoke projector</b><br>3</p><p><b>Huge table</b><br>1</p><p><b>Fun ba
+ lloons</b><br>2</p>
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:妙蛙種子跳大繩大賽攻略
