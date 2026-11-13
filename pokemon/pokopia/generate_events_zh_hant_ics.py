@@ -188,7 +188,7 @@ def localize(dt, tz):
     return HK.localize(dt)
 
 
-def build_description(desc, time_str, rows, time_labels):
+def build_description(desc, time_str, rows, time_labels, url):
     parts = []
     if desc:
         parts.append(f"簡介：{desc}")
@@ -198,10 +198,12 @@ def build_description(desc, time_str, rows, time_labels):
         if label in time_labels or label in ('目前狀態',):
             continue
         parts.append(f"{label}：{value}")
+    if url:
+        parts.append(f"網址：{url}")
     return '\n\n'.join(parts)
 
 
-def build_html_description(desc, time_str, rows, time_labels):
+def build_html_description(desc, time_str, rows, time_labels, url):
     parts = []
     if desc:
         parts.append(f'<p><b>簡介</b><br>{html.escape(desc)}</p>')
@@ -211,6 +213,9 @@ def build_html_description(desc, time_str, rows, time_labels):
         if label in time_labels or label in ('目前狀態',):
             continue
         parts.append(f'<p><b>{html.escape(label)}</b><br>{html.escape(value)}</p>')
+    if url:
+        safe_url = html.escape(url, quote=True)
+        parts.append(f'<p><b>網址</b><br><a href="{safe_url}">{safe_url}</a></p>')
     return ''.join(parts)
 
 
@@ -233,9 +238,10 @@ def main():
     added = 0
     for card in cards:
         slug = card['slug']
+        detail_url = f"{BASE_URL}/zh/events/{slug}"
         print(f"  Processing: {card['title']} ({slug})")
         try:
-            detail_html = fetch(f"{BASE_URL}/zh/events/{slug}")
+            detail_html = fetch(detail_url)
         except Exception as err:
             print(f"    ✗ Fetch failed: {err}")
             continue
@@ -246,8 +252,8 @@ def main():
             print("    ✗ No time found, skipped.")
             continue
 
-        description = build_description(card['desc'], time_str, rows, time_labels)
-        html_desc = build_html_description(card['desc'], time_str, rows, time_labels)
+        description = build_description(card['desc'], time_str, rows, time_labels, detail_url)
+        html_desc = build_html_description(card['desc'], time_str, rows, time_labels, detail_url)
 
         event = Event()
         event.add('summary', card['title'])

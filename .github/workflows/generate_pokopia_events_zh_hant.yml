@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Install dependencies
-        run: pip install requests icalendar pytz zhconv
+        run: pip install requests icalendar pytz
       - name: Generate ICS
         run: python pokemon/pokopia/generate_events_zh_hant_ics.py
       - name: Commit and push
